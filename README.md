@@ -39,7 +39,7 @@ API REST que permite:
 
 ```bash
 git clone <url-del-repositorio>
-cd final
+cd ExamenFinalConstruccionDeSoftware2025-2
 ```
 
 ### 2. Crear la base de datos MySQL
