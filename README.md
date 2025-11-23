@@ -35,22 +35,26 @@ API REST que permite:
 
 ## 🚀 Cómo Ejecutar el Proyecto
 
-### 1. Clonar el repositorio
+### 1. Abrir el proyecto en Apache NetBeans
 
-```bash
-git clone <url-del-repositorio>
-cd ExamenFinalConstruccionDeSoftware2025-2
-```
+1. Abrir **Apache NetBeans**
+2. Ir a `File` → `Open Project`
+3. Seleccionar la carpeta del proyecto `final`
+4. NetBeans detectará automáticamente que es un proyecto Maven
 
-### 2. Crear la base de datos MySQL
+### 2. Configurar la base de datos en MySQL
+
+1. Abrir **MySQL Workbench** o cliente MySQL de tu preferencia
+2. Crear la base de datos ejecutando:
 
 ```sql
 CREATE DATABASE IF NOT EXISTS examen_final;
 ```
 
-### 3. Configurar credenciales de base de datos
+### 3. Configurar credenciales de conexión
 
-Editar `src/main/resources/application.properties`:
+1. En NetBeans, navegar a `src/main/resources/application.properties`
+2. Verificar/ajustar las credenciales de tu MySQL local:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/examen_final
@@ -60,21 +64,10 @@ spring.datasource.password=root
 
 ### 4. Ejecutar la aplicación
 
-**Opción 1: Maven Wrapper (Recomendado)**
-
-```bash
-# Windows
-.\mvnw.cmd spring-boot:run
-
-# Linux/Mac
-./mvnw spring-boot:run
-```
-
-**Opción 2: Maven instalado**
-
-```bash
-mvn spring-boot:run
-```
+1. En NetBeans, clic derecho sobre el proyecto `final`
+2. Seleccionar **`Clean and Build`** (primera vez)
+3. Luego seleccionar **`Run`**
+4. La aplicación se compilará y ejecutará automáticamente
 
 ### 5. Verificar que la aplicación está corriendo
 
